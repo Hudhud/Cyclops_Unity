@@ -42,7 +42,7 @@ public class GvrReticle : MonoBehaviour, IGvrGazePointer {
   private const float kReticleMinOuterAngle = 0.5f;
   // Angle at which to expand the reticle when intersecting with an object
   // (in degrees).
-  private const float kReticleGrowthAngle = 1.5f;
+  private const float kReticleGrowthAngle = 0.5f;
 
   // Minimum distance of the reticle (in meters).
   private const float kReticleDistanceMin = 0.45f;
