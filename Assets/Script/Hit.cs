@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Hit : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
@@ -16,4 +16,5 @@ public class Hit : MonoBehaviour {
     {
         Destroy(gameObject);
     }
+
         }
