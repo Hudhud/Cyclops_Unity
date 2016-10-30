@@ -8,11 +8,15 @@ public class Hit : MonoBehaviour {
     private static int count = 0;
     public TextMesh countText;
 
+    public AudioClip destroySound;
+    private AudioSource source;
+
     // Use this for initialization
     void Start () {
         effect = GameObject.Find("HitEffect");
         countText = GameObject.Find("CountText").GetComponent<TextMesh>();
         countText.text = "Count: " + count.ToString();
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,7 +25,9 @@ public class Hit : MonoBehaviour {
 
     public void Disappear()
     {
-        Destroy(gameObject);
+        source.PlayOneShot(destroySound, 1F);
+        GetComponent<Renderer>().enabled = false;
+        Destroy(gameObject, destroySound.length);
         count++;
         countText.text = "Count: " + count.ToString();
         Instantiate(effect, transform.position, transform.rotation);
