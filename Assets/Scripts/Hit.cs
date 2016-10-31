@@ -8,7 +8,6 @@ public class Hit : MonoBehaviour {
     public GameObject effect;
     private static int count = 0;
     public TextMesh countText;
-    public Texture2D textureToUse;
     public AudioClip destroySound;
     private AudioSource source;
 
@@ -28,7 +27,8 @@ public class Hit : MonoBehaviour {
     {
         
         source.PlayOneShot(destroySound, 1F);
-        GetComponent<Renderer>().enabled = false;        
+        GetComponent<Renderer>().enabled = false;
+        Destroy(gameObject, destroySound.length);
         count++;
         countText.text = "Count: " + count.ToString();
         Instantiate(effect, transform.position, transform.rotation);
