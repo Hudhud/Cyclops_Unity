@@ -24,6 +24,8 @@ GameObject:
   - 23: {fileID: 23000010001050490}
   - 114: {fileID: 114000011795080934}
   - 114: {fileID: 114000011108450438}
+  - 114: {fileID: 114000011884621448}
+  - 82: {fileID: 82000013233638758}
   m_Layer: 0
   m_Name: Daaser
   m_TagString: Daase
@@ -80,6 +82,80 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012083630124}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &82000013233638758
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012083630124}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114000011108450438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,9 +197,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514e628d524d06142948a8d294f9b979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effect: {fileID: 1000012027068992, guid: 3889a76f42f47204abb035105909ac9c, type: 2}
+  effect: {fileID: 1000011414651270, guid: 0dcfd7fbb05635248bbf02b32f2ab629, type: 2}
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
+  textureToUse: {fileID: 0}
+  destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+--- !u!114 &114000011884621448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012083630124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50229a3106748604186f6723e7376424, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136000013395646004
 CapsuleCollider:
   m_ObjectHideFlags: 1
