@@ -17,13 +17,13 @@ public class CountDown : MonoBehaviour {
         if (timeLeft >= 0)
         {
             timeLeft -= Time.deltaTime;
-            countdown.text = "Time Left:" + Mathf.Round(timeLeft);
+            countdown.text = "Time: " + Mathf.Round(timeLeft);
         }
             
         //Her skal der implementeres hvad der skal gøres, når tiden er gået
         if (timeLeft <= 0)
         {
-            Debug.Log("Hej");
+
         }
     }
 }
