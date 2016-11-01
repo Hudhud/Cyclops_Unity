@@ -108,8 +108,8 @@ GameObject:
   - 82: {fileID: 4561396}
   - 82: {fileID: 4561389}
   m_Layer: 0
-  m_Name: daase (12)
-  m_TagString: Daase
+  m_Name: Can (12)
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -247,6 +247,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!23 &4561393
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -386,7 +387,7 @@ GameObject:
   - 65: {fileID: 6930806}
   - 23: {fileID: 6930805}
   m_Layer: 0
-  m_Name: Bord (1)
+  m_Name: Table (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -485,8 +486,8 @@ GameObject:
   - 82: {fileID: 38454607}
   - 82: {fileID: 38454600}
   m_Layer: 0
-  m_Name: daase (11)
-  m_TagString: Daase
+  m_Name: Can (11)
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -624,6 +625,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!23 &38454604
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -769,8 +771,8 @@ GameObject:
   - 82: {fileID: 114320386}
   - 82: {fileID: 114320379}
   m_Layer: 0
-  m_Name: daase (3)
-  m_TagString: Daase
+  m_Name: Can (3)
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -908,6 +910,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!23 &114320383
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1128,8 +1131,8 @@ GameObject:
   - 82: {fileID: 356806210}
   - 82: {fileID: 356806203}
   m_Layer: 0
-  m_Name: daase (8)
-  m_TagString: Daase
+  m_Name: Can (8)
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1267,6 +1270,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!23 &356806207
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1420,7 +1424,7 @@ GameObject:
   - 65: {fileID: 473181935}
   - 23: {fileID: 473181934}
   m_Layer: 0
-  m_Name: Tavle
+  m_Name: Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1507,8 +1511,8 @@ GameObject:
   - 82: {fileID: 503532084}
   - 82: {fileID: 503532077}
   m_Layer: 0
-  m_Name: daase (13)
-  m_TagString: Daase
+  m_Name: Can (13)
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1646,6 +1650,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!23 &503532081
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1916,7 +1921,7 @@ GameObject:
   - 65: {fileID: 588983740}
   - 23: {fileID: 588983739}
   m_Layer: 0
-  m_Name: Bord
+  m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2052,7 +2057,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 858565681}
   m_Layer: 0
-  m_Name: Bordplader
+  m_Name: Tables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2108,8 +2113,8 @@ GameObject:
   - 82: {fileID: 962730507}
   - 82: {fileID: 962730500}
   m_Layer: 0
-  m_Name: daase (9)
-  m_TagString: Daase
+  m_Name: Can (9)
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2247,6 +2252,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!23 &962730504
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2411,7 +2417,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1009347345}
   m_Layer: 0
-  m_Name: Daaser
+  m_Name: Cans
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2462,8 +2468,8 @@ GameObject:
   - 82: {fileID: 1026844075}
   - 82: {fileID: 1026844068}
   m_Layer: 0
-  m_Name: daase (10)
-  m_TagString: Daase
+  m_Name: Can (10)
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2601,6 +2607,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!23 &1026844072
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2760,8 +2767,8 @@ GameObject:
   - 82: {fileID: 1089446774}
   - 82: {fileID: 1089446767}
   m_Layer: 0
-  m_Name: daase (4)
-  m_TagString: Daase
+  m_Name: Can (4)
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2899,6 +2906,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!23 &1089446771
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3044,8 +3052,8 @@ GameObject:
   - 82: {fileID: 1097916720}
   - 82: {fileID: 1097916713}
   m_Layer: 0
-  m_Name: daase (7)
-  m_TagString: Daase
+  m_Name: Can (7)
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3183,6 +3191,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!23 &1097916717
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3322,7 +3331,7 @@ GameObject:
   - 64: {fileID: 1187706202}
   - 23: {fileID: 1187706201}
   m_Layer: 0
-  m_Name: Bane
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3505,8 +3514,8 @@ GameObject:
   - 82: {fileID: 1328107984}
   - 82: {fileID: 1328107982}
   m_Layer: 0
-  m_Name: daase
-  m_TagString: Daase
+  m_Name: Can
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3539,6 +3548,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!114 &1328107979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3783,7 +3793,7 @@ GameObject:
   - 65: {fileID: 1342124520}
   - 23: {fileID: 1342124519}
   m_Layer: 0
-  m_Name: Bord (3)
+  m_Name: Table (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3862,7 +3872,7 @@ GameObject:
   - 65: {fileID: 1346272749}
   - 23: {fileID: 1346272748}
   m_Layer: 0
-  m_Name: Bord (4)
+  m_Name: Table (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4023,7 +4033,7 @@ GameObject:
   - 65: {fileID: 1458743988}
   - 23: {fileID: 1458743987}
   m_Layer: 0
-  m_Name: Bord (2)
+  m_Name: Table (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4198,8 +4208,8 @@ GameObject:
   - 82: {fileID: 1610063328}
   - 82: {fileID: 1610063321}
   m_Layer: 0
-  m_Name: daase (6)
-  m_TagString: Daase
+  m_Name: Can (6)
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4337,6 +4347,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!23 &1610063325
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4496,8 +4507,8 @@ GameObject:
   - 82: {fileID: 1697265581}
   - 82: {fileID: 1697265574}
   m_Layer: 0
-  m_Name: daase (2)
-  m_TagString: Daase
+  m_Name: Can (2)
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4635,6 +4646,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!23 &1697265578
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4909,8 +4921,8 @@ GameObject:
   - 82: {fileID: 1918924865}
   - 82: {fileID: 1918924858}
   m_Layer: 0
-  m_Name: daase (1)
-  m_TagString: Daase
+  m_Name: Can (1)
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5048,6 +5060,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!23 &1918924862
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5314,8 +5327,8 @@ GameObject:
   - 82: {fileID: 1986799151}
   - 82: {fileID: 1986799144}
   m_Layer: 0
-  m_Name: daase (5)
-  m_TagString: Daase
+  m_Name: Can (5)
+  m_TagString: Can
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5453,6 +5466,7 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
+  speed: 1
 --- !u!23 &1986799148
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5605,3 +5619,4 @@ MonoBehaviour:
   countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
     type: 2}
   destroySound: {fileID: 0}
+  speed: 1

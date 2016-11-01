@@ -10,6 +10,7 @@ public class Hit : MonoBehaviour {
     public TextMesh countText;
     public AudioClip destroySound;
     private AudioSource source;
+    public float speed = 1;
 
     // Use this for initialization
     void Start () {
@@ -21,17 +22,20 @@ public class Hit : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+
 	}
 
     public void Disappear()
     {
-        
         source.PlayOneShot(destroySound, 1F);
         GetComponent<Renderer>().enabled = false;
-        Destroy(gameObject, destroySound.length);
+        Instantiate(effect, transform.position, transform.rotation);
+        DestroyImmediate(gameObject);
+        //destroySound;
         count++;
         countText.text = "Count: " + count.ToString();
-        Instantiate(effect, transform.position, transform.rotation);
+        
+       
     }
 
 

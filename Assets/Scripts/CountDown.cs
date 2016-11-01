@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CountDown : MonoBehaviour {
 
@@ -20,10 +21,16 @@ public class CountDown : MonoBehaviour {
             countdown.text = "Time: " + Mathf.Round(timeLeft);
         }
             
-        //Her skal der implementeres hvad der skal gøres, når tiden er gået
         if (timeLeft <= 0)
         {
-
+            if (GameObject.FindGameObjectsWithTag("Can") == null)
+            {
+                SceneManager.LoadScene("Level 2"); 
+            }
+            else
+            {
+                Debug.Log("Taber");
+            }
         }
     }
 }
