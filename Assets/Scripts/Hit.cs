@@ -28,13 +28,15 @@ public class Hit : MonoBehaviour {
     public void Disappear()
     {
         source.PlayOneShot(destroySound, 1F);
-        GetComponent<Renderer>().enabled = false;
         Instantiate(effect, transform.position, transform.rotation);
-        DestroyImmediate(gameObject);
+        Destroy(gameObject);
         //destroySound;
         count++;
         countText.text = "Count: " + count.ToString();
-        
+        if (destroySound)
+        {
+            AudioSource.PlayClipAtPoint(destroySound, transform.position);
+        }
        
     }
 
