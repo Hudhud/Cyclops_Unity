@@ -22,7 +22,7 @@ GameObject:
   - 23: {fileID: 23000013066326666}
   - 102: {fileID: 102000011361803006}
   - 222: {fileID: 222000013192651298}
-  - 114: {fileID: 114000013347240886}
+  - 114: {fileID: 114000011277147324}
   m_Layer: 0
   m_Name: CountDownText
   m_TagString: Untagged
@@ -80,7 +80,7 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
---- !u!114 &114000013347240886
+--- !u!114 &114000011277147324
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -92,6 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdown: {fileID: 102000011361803006}
+  wintext: {fileID: 102000014033152318, guid: 13ae7e5986695424c970dae98fe5ee4c, type: 2}
 --- !u!222 &222000013192651298
 CanvasRenderer:
   m_ObjectHideFlags: 1

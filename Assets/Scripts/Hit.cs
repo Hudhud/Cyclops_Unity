@@ -1,12 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System;
-using System.Threading;
+
 
 public class Hit : MonoBehaviour {
 
     public GameObject effect;
-    private static int count = 0;
+    public static int count = 0;
     public TextMesh countText;
     public AudioClip destroySound;
     private AudioSource source;
@@ -37,9 +35,11 @@ public class Hit : MonoBehaviour {
         {
             AudioSource.PlayClipAtPoint(destroySound, transform.position);
         }
-       
+           
     }
 
-
-
+    public void Restartcounter()
+    {
+        count = 0;
+    }
 }

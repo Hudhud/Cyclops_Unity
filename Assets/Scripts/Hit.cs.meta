@@ -1,13 +1,14 @@
 fileFormatVersion: 2
 guid: 514e628d524d06142948a8d294f9b979
-timeCreated: 1477415944
+timeCreated: 1478526852
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
   defaultReferences:
-  - effect: {fileID: 1000012027068992, guid: 3889a76f42f47204abb035105909ac9c, type: 2}
+  - effect: {fileID: 1000011414651270, guid: 0dcfd7fbb05635248bbf02b32f2ab629, type: 2}
   - countText: {fileID: 102000010290333198, guid: 4e186daed55a71749971ce56250edaaf,
       type: 2}
+  - destroySound: {fileID: 8300000, guid: ba2b7b6cfb3ebf54fa316d95de586013, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

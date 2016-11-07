@@ -4,33 +4,33 @@ using UnityEngine.SceneManagement;
 
 public class CountDown : MonoBehaviour {
 
-    float timeLeft = 10.0f;
+    float timeLeft = 30.0f;
     public TextMesh countdown;
+    static int i;
 
     // Use this for initialization
     void Start () {
-        countdown = gameObject.GetComponent<TextMesh>();
-
+        countdown = GameObject.Find("CountDownText").GetComponent<TextMesh>();
+        i = SceneManager.GetActiveScene().buildIndex;
     }
 
     // Update is called once per frame
     void Update () {
+       
         if (timeLeft >= 0)
         {
             timeLeft -= Time.deltaTime;
             countdown.text = "Time: " + Mathf.Round(timeLeft);
         }
             
-        if (timeLeft <= 0)
-        {
-            if (GameObject.FindGameObjectsWithTag("Can") == null)
+            if (GameObject.FindGameObjectWithTag("Can") == null)
             {
-                SceneManager.LoadScene("Level 2"); 
+            Hit counter = new Hit();
+            counter.Restartcounter();
+            SceneManager.LoadScene(++i);
             }
-            else
+            if (timeLeft <= 0)
             {
-                Debug.Log("Taber");
-            }
         }
     }
 }
