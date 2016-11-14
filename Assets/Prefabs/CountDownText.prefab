@@ -66,7 +66,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013287658382}
-  m_Text: Time Left:10
+  m_Text: 'Time: 28'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -92,7 +92,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdown: {fileID: 102000011361803006}
-  wintext: {fileID: 102000014033152318, guid: 13ae7e5986695424c970dae98fe5ee4c, type: 2}
+  gameOverText: {fileID: 0}
+  counter: {fileID: 0}
 --- !u!222 &222000013192651298
 CanvasRenderer:
   m_ObjectHideFlags: 1
