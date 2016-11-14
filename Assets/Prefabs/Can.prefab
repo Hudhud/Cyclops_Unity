@@ -27,6 +27,7 @@ GameObject:
   - 114: {fileID: 114000010366196664}
   - 114: {fileID: 114000012417735192}
   - 114: {fileID: 114000013530829306}
+  - 114: {fileID: 114000013495394930}
   m_Layer: 0
   m_Name: Can
   m_TagString: Can
@@ -258,6 +259,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec61b02f284ad643b396b66c7e3d1e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000013495394930
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013768171272}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0b3f5d21bf4f2f4eba5d31635f08fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  target: {fileID: 0}
 --- !u!114 &114000013530829306
 MonoBehaviour:
   m_ObjectHideFlags: 1
