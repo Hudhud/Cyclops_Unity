@@ -2,7 +2,8 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class CountDown : MonoBehaviour {
+public class CountDown : MonoBehaviour
+{
 
     float timeLeft = 30.0f;
     public TextMesh countdown, gameOverText;
@@ -10,7 +11,7 @@ public class CountDown : MonoBehaviour {
     public Hit counter;
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         gameOverText.gameObject.SetActive(false);
         counter = gameObject.AddComponent<Hit>();
@@ -19,7 +20,8 @@ public class CountDown : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
 
         if (timeLeft >= 0)
         {
@@ -37,7 +39,8 @@ public class CountDown : MonoBehaviour {
         }
         else
         {
-
+            gameOverText.text = "GAME OVER";
+            gameOverText.gameObject.SetActive(true);
         }
     }
 
