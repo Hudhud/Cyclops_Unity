@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CountDown : MonoBehaviour
@@ -32,8 +32,8 @@ public class CountDown : MonoBehaviour
             {
                 if (i == SceneManager.sceneCount) gameOverText.text = "GAME WON";
                 gameOverText.gameObject.SetActive(true);
+                StartCoroutine(Wait(3));
                 counter.Restartcounter();
-                StartCoroutine(Wait(3000));
                 SceneManager.LoadScene(++i);
             }
 
@@ -45,7 +45,7 @@ public class CountDown : MonoBehaviour
         }
     }
 
-    IEnumerator Wait(float sec)
+    private static IEnumerator Wait(float sec)
     {
         yield return new WaitForSeconds(sec);
     }
