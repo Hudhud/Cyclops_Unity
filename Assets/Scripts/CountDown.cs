@@ -9,10 +9,12 @@ public class CountDown : MonoBehaviour
     public TextMesh countdown, gameOverText;
     static int i;
     public Hit counter;
+    private bool finished;
 
     // Use this for initialization
     void Start()
     {
+        finished = false;
         gameOverText.gameObject.SetActive(false);
         counter = gameObject.AddComponent<Hit>();
         countdown = GameObject.Find("CountDownText").GetComponent<TextMesh>();
@@ -23,18 +25,18 @@ public class CountDown : MonoBehaviour
     void Update()
     {
 
-        if (timeLeft >= 0)
+        if (timeLeft >= 0 && !finished)
         {
             timeLeft -= Time.deltaTime;
             countdown.text = "Time: " + Mathf.Round(timeLeft);
 
             if (GameObject.FindGameObjectWithTag("Can") == null)
             {
+                finished = true;
                 if (i == SceneManager.sceneCount) gameOverText.text = "GAME WON";
                 gameOverText.gameObject.SetActive(true);
                 StartCoroutine(Wait(3));
                 counter.Restartcounter();
-                SceneManager.LoadScene(++i);
             }
 
         }
@@ -45,8 +47,9 @@ public class CountDown : MonoBehaviour
         }
     }
 
-    private static IEnumerator Wait(float sec)
+    IEnumerator Wait(float sec)
     {
         yield return new WaitForSeconds(sec);
+        SceneManager.LoadScene(++i);
     }
 }
