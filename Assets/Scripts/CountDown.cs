@@ -26,6 +26,8 @@ public class CountDown : MonoBehaviour
     {
         if (finished) return;
 
+        if (GameOverSingleton.Instance.GameOver) GameLost();
+
         if (timeLeft >= 0)
         {
             timeLeft -= Time.deltaTime;
@@ -43,10 +45,15 @@ public class CountDown : MonoBehaviour
         }
         else
         {
-            finished = true;
-            gameOverText.text = "GAME OVER";
-            gameOverText.gameObject.SetActive(true);
+            
         }
+    }
+
+    private void GameLost()
+    {
+        finished = true;
+        gameOverText.text = "GAME OVER";
+        gameOverText.gameObject.SetActive(true);
     }
 
     IEnumerator Wait(float sec)
