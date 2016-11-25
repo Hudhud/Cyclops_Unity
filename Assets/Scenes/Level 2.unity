@@ -538,6 +538,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 222e9ad6cac374e4f8723cb535188282, type: 2}
   m_IsPrefabParent: 0
+--- !u!102 &491588995 stripped
+TextMesh:
+  m_PrefabParentObject: {fileID: 102000014215261270, guid: 222e9ad6cac374e4f8723cb535188282,
+    type: 2}
+  m_PrefabInternal: {fileID: 491588994}
 --- !u!1001 &498143380
 Prefab:
   m_ObjectHideFlags: 0
@@ -1478,7 +1483,7 @@ Prefab:
         type: 2}
       propertyPath: gameOverText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 491588995}
     - target: {fileID: 224000013438381898, guid: b71ff0fec6610974a95ce163782bd779,
         type: 2}
       propertyPath: m_LocalScale.x
