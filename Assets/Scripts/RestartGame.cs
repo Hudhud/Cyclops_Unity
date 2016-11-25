@@ -1,20 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class RestartGame : MonoBehaviour
 {
     void Start()
     {
-        EventTrigger trigger = GetComponent<EventTrigger>();
-        EventTrigger.Entry entry = new EventTrigger.Entry();
-        entry.eventID = EventTriggerType.PointerDown;
-        entry.callback.AddListener((data) => { OnPointerDownDelegate((PointerEventData)data); });
-        trigger.triggers.Add(entry);
+        if (GameOverSingleton.Instance.GameOver)
+        {
+            EventTrigger trigger = GetComponent<EventTrigger>();
+            EventTrigger.Entry entry = new EventTrigger.Entry();
+            entry.eventID = EventTriggerType.PointerDown;
+            entry.callback.AddListener((data) => { OnPointerClick((PointerEventData)data); });
+            trigger.triggers.Add(entry);
+        }
     }
 
-    public void OnPointerDownDelegate(PointerEventData data)
+    public void OnPointerClick(PointerEventData data)
     {
-        Debug.Log("OnPointerDownDelegate called.");
+        SceneManager.LoadScene(0);
     }
 }
