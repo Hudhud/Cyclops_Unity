@@ -25,6 +25,7 @@ public class Hit : MonoBehaviour {
 
     public void Disappear()
     {
+        if (GameOverSingleton.Instance.GameOver) return;
         source.PlayOneShot(destroySound, 1F);
         Instantiate(effect, transform.position, transform.rotation);
         Destroy(gameObject);

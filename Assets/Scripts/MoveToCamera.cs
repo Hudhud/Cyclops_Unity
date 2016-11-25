@@ -13,12 +13,15 @@ public class MoveToCamera : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {  
+        if(GameOverSingleton.Instance.GameOver) return;
         float step = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, target.position, step);
 	    if (transform.position.Equals(target.position))
 	    {
             Destroy(gameObject);
+	        GameOverSingleton.Instance.GameOver = true;
 	        print("lost");
 	    }
     }
