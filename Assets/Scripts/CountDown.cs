@@ -34,7 +34,7 @@ public class CountDown : MonoBehaviour
             if (GameObject.FindGameObjectWithTag("Can") == null)
             {
                 finished = true;
-                gameOverText.text = i == SceneManager.sceneCount ? "GAME WON" : "LEVEL COMPLETE";
+                gameOverText.text = i == SceneManager.sceneCountInBuildSettings -1? "GAME WON" : "LEVEL COMPLETE";
                 gameOverText.gameObject.SetActive(true);
                 StartCoroutine(Wait(3));
                 counter.Restartcounter();
