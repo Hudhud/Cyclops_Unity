@@ -18,7 +18,8 @@ public class MoveToCamera : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target.position, step);
 	    if (transform.position.Equals(target.position))
 	    {
-	        print("it's lit");
+            Destroy(gameObject);
+	        print("lost");
 	    }
     }
 }
