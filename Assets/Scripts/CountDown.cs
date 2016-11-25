@@ -24,8 +24,9 @@ public class CountDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (finished) return;
 
-        if (timeLeft >= 0 && !finished)
+        if (timeLeft >= 0)
         {
             timeLeft -= Time.deltaTime;
             countdown.text = "Time: " + Mathf.Round(timeLeft);
@@ -33,7 +34,7 @@ public class CountDown : MonoBehaviour
             if (GameObject.FindGameObjectWithTag("Can") == null)
             {
                 finished = true;
-                if (i == SceneManager.sceneCount) gameOverText.text = "GAME WON";
+                gameOverText.text = i == SceneManager.sceneCount ? "GAME WON" : "LEVEL COMPLETE";
                 gameOverText.gameObject.SetActive(true);
                 StartCoroutine(Wait(3));
                 counter.Restartcounter();
@@ -42,6 +43,7 @@ public class CountDown : MonoBehaviour
         }
         else
         {
+            finished = true;
             gameOverText.text = "GAME OVER";
             gameOverText.gameObject.SetActive(true);
         }
