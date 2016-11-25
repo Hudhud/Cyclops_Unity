@@ -92,7 +92,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdown: {fileID: 102000011361803006}
-  gameOverText: {fileID: 0}
+  gameOverText: {fileID: 102000014215261270, guid: 222e9ad6cac374e4f8723cb535188282,
+    type: 2}
   counter: {fileID: 0}
 --- !u!222 &222000013192651298
 CanvasRenderer:
