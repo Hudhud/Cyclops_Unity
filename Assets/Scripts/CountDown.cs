@@ -30,6 +30,7 @@ public class CountDown : MonoBehaviour
 
             if (GameObject.FindGameObjectWithTag("Can") == null)
             {
+                if (i == SceneManager.sceneCount) gameOverText.text = "GAME WON";
                 gameOverText.gameObject.SetActive(true);
                 counter.Restartcounter();
                 StartCoroutine(Wait(3000));
