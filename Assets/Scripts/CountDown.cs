@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CountDown : MonoBehaviour
 {
@@ -8,9 +9,9 @@ public class CountDown : MonoBehaviour
     float timeLeft = 30.0f;
     public TextMesh countdown, gameOverText;
     static int i = 0, winscounter = 0, lossescounter = 0;
-    public Hit counter;
+    private Hit counter;
     private bool finished;
-
+    public Text winText, lossText;
 
     // Use this for initialization
     void Start()
@@ -22,7 +23,8 @@ public class CountDown : MonoBehaviour
         i = SceneManager.GetActiveScene().buildIndex;
         winscounter = PlayerPrefs.GetInt("Wins");
         lossescounter = PlayerPrefs.GetInt("Losses");
-        Debug.Log(winscounter+" "+lossescounter);
+        winText.text = "Wins: " + winscounter;
+        lossText.text = "Losses: " + lossescounter;
     }
 
     // Update is called once per frame
