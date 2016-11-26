@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class CountDown : MonoBehaviour
 {
-
+    private string ContinueText = "\nSHOOT SCOREBOARD TO RESTART";
     float timeLeft = 30.0f;
     public TextMesh countdown, gameOverText;
     static int i;
@@ -38,7 +38,7 @@ public class CountDown : MonoBehaviour
                 finished = true;
                 if (i == SceneManager.sceneCountInBuildSettings - 1)
                 {
-                    gameOverText.text = "GAME WON";
+                    gameOverText.text = "GAME WON" + ContinueText;
                     GameOverSingleton.Instance.GameOver = true;
                 }
                 else gameOverText.text = "LEVEL COMPLETE";
@@ -58,7 +58,7 @@ public class CountDown : MonoBehaviour
     {
         GameOverSingleton.Instance.GameOver = true;
         finished = true;
-        gameOverText.text = "GAME OVER";
+        gameOverText.text = "GAME OVER" + ContinueText;
         gameOverText.gameObject.SetActive(true);
     }
 
