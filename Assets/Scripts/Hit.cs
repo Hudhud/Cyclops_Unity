@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 
 public class Hit : MonoBehaviour {
@@ -43,14 +42,5 @@ public class Hit : MonoBehaviour {
     public void Restartcounter()
     {
         count = 0;
-    }
-
-    public void Restart()
-    {
-        if (GameOverSingleton.Instance.GameOver)
-        {
-            SceneManager.LoadScene(0);
-            GameOverSingleton.Instance.GameOver = false;
-        }
     }
 }

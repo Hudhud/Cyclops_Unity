@@ -45,13 +45,12 @@ public class CountDown : MonoBehaviour
         }
         else
         {
-            GameLost();
+            
         }
     }
 
     private void GameLost()
     {
-        GameOverSingleton.Instance.GameOver = true;
         finished = true;
         gameOverText.text = "GAME OVER";
         gameOverText.gameObject.SetActive(true);
