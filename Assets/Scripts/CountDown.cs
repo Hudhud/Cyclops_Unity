@@ -7,9 +7,10 @@ public class CountDown : MonoBehaviour
     private string ContinueText = "\nSHOOT SCOREBOARD TO RESTART";
     float timeLeft = 30.0f;
     public TextMesh countdown, gameOverText;
-    static int i;
+    static int i, winscounter, lossescounter;
     public Hit counter;
     private bool finished;
+
 
     // Use this for initialization
     void Start()
@@ -19,6 +20,12 @@ public class CountDown : MonoBehaviour
         counter = gameObject.AddComponent<Hit>();
         countdown = GameObject.Find("CountDownText").GetComponent<TextMesh>();
         i = SceneManager.GetActiveScene().buildIndex;
+        PlayerPrefs.SetInt("Wins", winscounter);
+        PlayerPrefs.SetInt("Losses", lossescounter);
+        PlayerPrefs.Save();
+        int wins = PlayerPrefs.GetInt("Wins");
+        int losses = PlayerPrefs.GetInt("Losses");
+        Debug.Log(wins+" "+losses);
     }
 
     // Update is called once per frame
@@ -40,6 +47,7 @@ public class CountDown : MonoBehaviour
                 {
                     gameOverText.text = "GAME WON" + ContinueText;
                     GameOverSingleton.Instance.GameOver = true;
+                    winscounter++;
                 }
                 else gameOverText.text = "LEVEL COMPLETE";
                 gameOverText.gameObject.SetActive(true);
@@ -60,6 +68,7 @@ public class CountDown : MonoBehaviour
         finished = true;
         gameOverText.text = "GAME OVER" + ContinueText;
         gameOverText.gameObject.SetActive(true);
+        lossescounter++;
     }
 
     IEnumerator Wait(float sec)
