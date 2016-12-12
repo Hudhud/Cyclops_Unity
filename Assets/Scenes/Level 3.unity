@@ -1785,7 +1785,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -2139,6 +2139,7 @@ GameObject:
   - 224: {fileID: 1505523230}
   - 222: {fileID: 1505523232}
   - 114: {fileID: 1505523231}
+  - 114: {fileID: 1505523233}
   m_Layer: 5
   m_Name: WinsText
   m_TagString: Untagged
@@ -2185,7 +2186,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -2203,6 +2204,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1505523229}
+--- !u!114 &1505523233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1505523229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 430f5ef595bb55f4fad27005692247c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WinText: {fileID: 1505523231}
+  LossText: {fileID: 1269195164}
 --- !u!4 &1599332413 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011393531146, guid: 4c07304a92375f044861f4cbf5687a71,
