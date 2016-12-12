@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CountDown : MonoBehaviour
 {
     private string ContinueText = "\nSHOOT SCOREBOARD TO RESTART";
-    float timeLeft = 30.0f;
+    float timeLeft = 20.0f;
     public TextMesh countdown, gameOverText;
     static int i = 0, winscounter = 0, lossescounter = 0;
     private Hit counter;
