@@ -2,9 +2,11 @@
 	Properties{
 		_CanTexture("Texture", 2D) = "red" {}
 	}
+		
 		SubShader{
 		Tags{ "RenderType" = "Opaque" }
 		CGPROGRAM
+
 #pragma surface surf Lambert
 		struct Input {
 		float2 uv_CanTexture;
@@ -17,3 +19,5 @@
 	}
 		Fallback "Diffuse"
 }
+
+

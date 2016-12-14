@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Movement : MonoBehaviour {
 
-    public float speed;
-    public float length;
+    private float speed = 0.1f;
+    private float length = 0.1f;
 
     void Update()
     {
