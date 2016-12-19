@@ -72,6 +72,7 @@ public class CountDown : MonoBehaviour
         lossescounter++;
         PlayerPrefs.SetInt("Losses", lossescounter);
         PlayerPrefs.Save();
+        counter.Restartcounter();
     }
 
     IEnumerator Wait(float sec)
