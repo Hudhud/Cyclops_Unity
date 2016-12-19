@@ -50,7 +50,7 @@ public class Hit : MonoBehaviour {
         if (GameOverSingleton.Instance.GameOver)
         {
             GameOverSingleton.Instance.GameOver = false;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 }
